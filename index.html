@@ -8,6 +8,44 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <div id="loading">
+      <div></div>
+      <style>
+        #loading {
+          position: fixed;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background: #1b1b1b;
+        }
+        #loading > div {
+          width: 240px;
+          height: 240px;
+          background: url('/src/assets/logo.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        @media (max-width: 1080px) {
+          #loading > div {
+            width: 180px;
+            height: 180px;
+          }
+        }
+        @media (max-width: 720px) {
+          #loading > div {
+            width: 128px;
+            height: 128px;
+          }
+        }
+      </style>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

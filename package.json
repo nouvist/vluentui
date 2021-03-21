@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vuedx-typecheck . && vite build",
     "serve": "vite preview",
+    "build": "yarn build:lib && yarn build:types",
+    "build:lib": "vuedx-typecheck . && vite build",
+    "build:types": "tsc --emitDeclarationOnly --declaration --outFile dist/types.d.ts src/index.ts",
     "lint": "eslint . --ext .vue,.js"
   },
   "dependencies": {

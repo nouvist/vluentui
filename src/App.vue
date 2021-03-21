@@ -20,12 +20,9 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import VInput from './components/VInput.vue';
-import VSidebar from './components/VSidebar.vue';
 
 export default defineComponent({
   name: 'App',
-  components: { VSidebar, VInput },
   data() {
     return {
       test: 'Lorem ipsum',

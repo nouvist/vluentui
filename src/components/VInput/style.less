@@ -1,0 +1,49 @@
+.v-input {
+  vertical-align: top;
+  display: inline-flex;
+  border: 1px solid @color0;
+  align-items: center;
+  border-radius: 2px;
+  height: 32px;
+  padding: 0 6px;
+  gap: 6px;
+  padding: 0 16px;
+  background: @darker0;
+  cursor: text;
+  transition: border, box-shadow 150ms;
+  @media @maxTablet {
+    height: 40px;
+  }
+  &.v-input-clearbtn {
+    padding-right: 6px;
+  }
+  &:hover {
+    border: 1px solid @color2;
+  }
+  &.v-input-focus {
+    border: 1px solid @color2;
+    box-shadow: 0 0 0 1px @color2;
+  }
+  > .bi {
+    margin-right: 10px;
+  }
+  input {
+    background: none;
+    min-width: 0;
+    flex: 1;
+    &::placeholder {
+      color: @color0;
+    }
+  }
+  button {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: @hover0;
+    }
+    width: 24px;
+    height: 24px;
+  }
+}

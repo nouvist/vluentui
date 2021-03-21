@@ -8,13 +8,13 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       less: {
-        additionalData: '@import "./src/global.less";',
+        additionalData: '@import "./lib/global.less";',
       },
     },
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
+      entry: path.resolve(__dirname, 'lib/index.ts'),
       name: 'vluentui',
     },
     rollupOptions: {

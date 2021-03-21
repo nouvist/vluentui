@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import vluent from '.';
+import vluent from '../lib/main';
 import App from './App.vue';
 import Loading from './loading';
 

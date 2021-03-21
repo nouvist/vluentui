@@ -1,6 +1,6 @@
 <template>
   <v-sidebar />
-  <div class="container">
+  <v-container>
     <h1>hell yeah</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
@@ -15,7 +15,7 @@
       placeholder="Search"
       clear-button
     />
-  </div>
+  </v-container>
 </template>
 
 <script lang="ts">
@@ -35,72 +35,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style lang="less">
-@import 'normalize.css/normalize.css';
-@import 'bootstrap-icons/font/bootstrap-icons.css';
-html,
-body,
-#app {
-  height: 100%;
-}
-#app {
-  display: flex;
-}
-.container {
-  max-width: 1024px;
-  width: 100%;
-  padding: 20px 40px;
-  @media @maxPhone {
-    padding: 0 5px;
-  }
-}
-* {
-  box-sizing: border-box;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: 500;
-}
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: @surface0;
-  color: #fff;
-  font-size: 14px;
-}
-input,
-button {
-  border: none;
-  border-radius: 2;
-  font-size: 14px;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: none;
-  &:focus {
-    outline: none;
-  }
-}
-button {
-  cursor: pointer;
-}
-*::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-*::-webkit-scrollbar-track {
-  opacity: 0;
-}
-*::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: #7d7d7d;
-}
-.bi {
-  font-size: 16px;
-}
-</style>

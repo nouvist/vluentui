@@ -1,5 +1,7 @@
 import anime from 'animejs';
-import { computed, defineComponent, ref } from 'vue';
+import {
+  computed, defineComponent, ref,
+} from 'vue';
 import VSidebarButton from '../VSidebarButton/sfc.vue';
 
 export default defineComponent({
@@ -9,6 +11,10 @@ export default defineComponent({
     currentPage: {
       type: String,
       default: 'Undefined',
+    },
+    navlist: {
+      type: Array as () => { name: string; icon: string; active?: boolean }[],
+      required: true,
     },
   },
   setup() {

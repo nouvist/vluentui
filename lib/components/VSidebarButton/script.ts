@@ -16,7 +16,6 @@ export default defineComponent({
     const btnClass = computed(
       () => `v-sidebarbutton ${props.active ? 'v-sidebarbutton-active' : ''}`,
     );
-    const iconClass = computed(() => `bi ${props.icon}`);
-    return { btnClass, iconClass };
+    return { btnClass };
   },
 });

@@ -1,5 +1,5 @@
 <template>
-  <v-sidebar />
+  <v-sidebar :navlist="navlist" />
   <v-container>
     <h1>hell yeah</h1>
     <p>
@@ -26,6 +26,18 @@ export default defineComponent({
   data() {
     return {
       test: 'Lorem ipsum',
+      navlist: [
+        {
+          name: 'mantap',
+          icon: 'bi-archive',
+          active: true,
+        },
+        {
+          name: 'mantap',
+          icon: 'bi-archive',
+          active: false,
+        },
+      ],
     };
   },
   methods: {

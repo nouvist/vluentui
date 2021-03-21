@@ -6,7 +6,7 @@ export default defineComponent({
   name: 'VInput',
   props: {
     type: {
-      type: String,
+      type: String as () => 'text' | 'password' | string,
       default: 'text',
     },
     name: {
@@ -68,7 +68,6 @@ export default defineComponent({
       }`,
     );
     return {
-      props,
       onFocus,
       onInput,
       onClear,

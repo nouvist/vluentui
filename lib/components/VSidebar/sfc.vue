@@ -29,11 +29,14 @@
     </div>
     <div>
       <h1>{{ currentPage }}</h1>
-      <v-sidebar-button active>
-        mantap
+      <v-sidebar-button
+        v-for="i of navlist"
+        :key="i.name"
+        :icon="i.icon"
+        :active="i.active"
+      >
+        {{ i.name }}
       </v-sidebar-button>
-      <v-sidebar-button> mantap </v-sidebar-button>
-      <v-sidebar-button> mantap </v-sidebar-button>
     </div>
   </div>
   <!-- #endregion -->

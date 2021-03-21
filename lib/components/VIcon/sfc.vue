@@ -1,7 +1,5 @@
 <template>
-  <div class="v-container">
-    <slot />
-  </div>
+  <i class="v-icon" />
 </template>
 
 <script lang="ts" src="./script"></script>

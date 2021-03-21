@@ -1,7 +1,7 @@
 <template>
   <button :class="btnClass">
     <div />
-    <i :class="iconClass" />
+    <v-icon :class="`bi ${icon}`" />
     <span> <slot /> </span>
   </button>
 </template>

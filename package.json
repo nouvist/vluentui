@@ -1,5 +1,6 @@
 {
-  "name": "vluent",
+  "name": "vluentui",
+  "main": "lib/vluentui.umd.js",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

@@ -1,23 +1,23 @@
 <template>
   <label :class="className">
-    <i
-      v-if="props.icon"
-      :class="`bi ${props.icon}`"
+    <v-icon
+      v-if="icon"
+      :class="`bi ${icon}`"
     />
     <input
-      :type="props.type"
-      :placeholder="props.placeholder"
-      :value="props.modelValue"
-      :name="props.name"
+      :type="type"
+      :placeholder="placeholder"
+      :value="modelValue"
+      :name="name"
       @input="onInput"
       @focus="onFocus"
       @blur="onFocus"
     >
     <button
-      v-if="!isEmpty && props.clearButton"
+      v-if="!isEmpty && clearButton"
       @click="onClear"
     >
-      <i :class="`bi ${props.clearIcon}`" />
+      <i :class="`bi ${clearIcon}`" />
     </button>
   </label>
 </template>
